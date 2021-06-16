@@ -12,7 +12,7 @@ public class TempStream1 {
    * Process the data and print the results.
    */
   public static void processTemps() {
-    try (Scanner file = new Scanner(new File("crete.txt"))) {
+    try (Scanner file = new Scanner(new FileInputStream("crete.txt"))) {
       double mean = 0.0;
       int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, n = 0;
       int nNeg = 0;
