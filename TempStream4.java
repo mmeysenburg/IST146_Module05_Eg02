@@ -17,7 +17,7 @@ public class TempStream4 {
     List<Integer> lows = new ArrayList<>();
     List<Integer> highs = new ArrayList<>();
 
-    try (Scanner file = new Scanner(new File("crete.txt"))) {
+    try (Scanner file = new Scanner(new FileInputStream("crete.txt"))) {
       while (file.hasNextInt()) {
         highs.add(file.nextInt());
         lows.add(file.nextInt());
